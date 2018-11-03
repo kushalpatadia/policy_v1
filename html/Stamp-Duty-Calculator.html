@@ -1,0 +1,255 @@
+﻿<!DOCTYPE html>
+<html class="wide wow-animation" lang="en">
+  <head>
+    <title>Stamp Duty Calculator | Fee Free Contractor Mortgage Advice</title>
+    <meta name="description" content="Work out how much Stamp Duty Land Tax you have to pay with our extremely helpful calculator." />
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Roboto:100,300,300i,400,700,900">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/style.css" id="main-styles-link">
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    
+    <!--[if lt IE 10]>
+    <div style="background: #212121; padding: 10px 0; box-shadow: 3px 3px 5px 0 rgba(0,0,0,.3); clear: both; text-align:center; position: relative; z-index:1;"><a href="http://windows.microsoft.com/en-US/internet-explorer/"><img src="images/ie8-panel/warning_bar_0000_us.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today."></a></div>
+    <script src="js/html5shiv.min.js"></script>
+    <![endif]-->
+    <style type="text/css">
+	.lender-img img{ border:1px solid #1d0d44;width: 327px;    height: 260px;}
+	  .lender-img{  padding: 0 90px;}
+	  .limg img{ border:0px solid #1d0d44;width: 150px; margin-right:5px;
+        height: auto;
+    float: left;}
+	.quote-large .quote-meta.limg{width:100% !important;max-width:100% !important; padding-right:0px !important;}
+	.row{margin-left:0; margin-right:0;}	.cs article{padding:10px;}</style>
+    <script type="text/javascript">
+	function calcStampDuty(price) {
+var variablePortion = 0;
+var sdlt = 0;
+var taxableAmount = 0;
+if (price <= 125000) {
+// Below £125,000.01, there&#39;s no Stamp Duty to pay on residential properties in the
+UK
+return 0;
+}
+if (price >= 125001 && price <= 250000) {
+// Between £125,001 and £250,000, 2% is payable on the amount above £125,000
+// but below £250,000
+taxableAmount = price - 125000;
+sdlt = taxableAmount * 0.02;
+return Math.floor(sdlt);
+}
+if (price >= 250001 && price <= 925000) {
+// Between £250,001 and £925,000, 5% is payable on the amount above £250,000
+variablePortion = price - 250000;
+sdlt = variablePortion * 0.05 + 2500;
+return Math.floor(sdlt);
+}
+
+if (price >= 925001 && price <= 1500000) {
+// Between £925,001 and £1,500,000, 10% is payable on the amount above £925,000
+variablePortion = price - 925000;
+sdlt = variablePortion * 0.1 + 36250;
+return Math.floor(sdlt);
+}
+if (price > 1500000) {
+// Over £1.5m, 12% is payable for that portion
+variablePortion = price - 1500000;
+sdlt = variablePortion * 0.12 + 93750;
+return Math.floor(sdlt);
+}
+}
+
+function calcStampDutyMulti(price) {
+var variablePortion = 0;
+var sdlt = 0;
+var taxableAmount = 0;
+if (price <= 125000) {
+// Below £125,000.01, there&#39;s no Stamp Duty to pay on residential properties in the
+UK
+sdlt = price * 0.03;
+return Math.floor(sdlt);
+
+}
+if (price >= 125001 && price <= 250000) {
+// Between £125,001 and £250,000, 2% is payable on the amount above £125,000
+// but below £250,000
+taxableAmount = price - 125000;
+sdlt = taxableAmount * 0.05 + 3750;
+return Math.floor(sdlt);
+}
+if (price >= 250001 && price <= 925000) {
+// Between £250,001 and £925,000, 5% is payable on the amount above £250,000
+variablePortion = price - 250000;
+sdlt = variablePortion * 0.08 + 10000;
+return Math.floor(sdlt);
+}
+if (price >= 925001 && price <= 1500000) {
+// Between £925,001 and £1,500,000, 10% is payable on the amount above £925,000
+variablePortion = price - 925000;
+sdlt = variablePortion * 0.13 + 64000;
+return Math.floor(sdlt);
+}
+if (price > 1500000) {
+// Over £1.5m, 12% is payable for that portion
+variablePortion = price - 1500000;
+sdlt = variablePortion * 0.15 + 138750;
+return Math.floor(sdlt);
+}
+}
+/*function calstampduty(){
+	var price = document.getElementById('price').value;
+	var sdval=calcStampDuty(price);
+	alert(sdval);
+}*/
+    var modules = {};
+
+    window.addEventListener('load', function () {
+        modules.StampDutyCalculator = new KfCommon.StampDutyCalculatorNew();
+    });
+	</script>
+  </head>
+  <body>
+    
+    <div class="page">
+      
+   	    <header class="section page-header">
+        <div class="rd-navbar-wrap rd-navbar-absolute">
+          <nav class="rd-navbar rd-navbar-transparent" data-layout="rd-navbar-fixed" data-sm-layout="rd-navbar-fixed" data-md-layout="rd-navbar-fixed" data-md-device-layout="rd-navbar-fixed" data-lg-layout="rd-navbar-static" data-lg-device-layout="rd-navbar-fixed" data-xl-layout="rd-navbar-static" data-xl-device-layout="rd-navbar-static" data-lg-stick-up-offset="20px" data-xl-stick-up-offset="20px" data-xxl-stick-up-offset="20px" data-lg-stick-up="true" data-xl-stick-up="true" data-xxl-stick-up="true">
+            <div class="rd-navbar-main-outer">
+              <div class="rd-navbar-main">
+                <div class="rd-navbar-panel">
+                  <button class="rd-navbar-toggle" data-rd-navbar-toggle=".rd-navbar-nav-wrap"><span></span></button>
+                  <div class="rd-navbar-brand"><a class="brand" href="index.html"><img class="brand-logo-dark" src="images/cmd_logo.png" alt="" width="240" height="66"/><img class="brand-logo-light" src="images/cmd_logo.png" alt="" width="240" height="66"/></a>
+                  </div>
+                </div>
+                <div class="rd-navbar-main-element">
+                  <div id="b-placeholder-menu"></div>
+                </div>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </header>
+      <section class="section section-md bg-primary-gradient" id="accordpage" >
+        <div class="container text-center">
+          <h2 class="custom-title"><span>Stamp Duty Calculator</span></h2>
+          <div style="margin-top:20px; text-align:left;">
+          		<p>Stamp Duty Land Tax or SDLT is a tax payable on properties by the buyer, there are incentives
+available to First Time Buyers.</p>
+
+<p>The Autumn Budget 2017, heralded some changes where the Chancellor of the Exchequer announced relief from Stamp Duty Land Tax (SDLT) 
+for first time buyers in England and Northern Ireland. The relief applies from 22 November 2017 to purchases of residential property for £500,000 or less, provided the 
+purchaser intends to occupy the property as their only or main residence. There is nil rate of Stamp Duty to pay on the first £300,000, giving First
+Time Buyers a potential relief of up to £5,000.</p>
+
+<p>Any purchases above £500,000 will attract the normal stamp duty rates on the whole purchase price for first time buyers.</p>
+
+<p>For second properties and buy to let properties the rate of stamp duty is higher, to get a feel for the
+amount that would be payable by you, please use our friendly calculator below, if you have any
+questions, please drop us a message and one of our advisers will be in touch.</p>
+
+<p>If for example you are selling your existing property know as your Principle Primary Residence and buying another
+primary residence, you may have other investment properties, such as buy to lets in the back ground, you will only be liable
+the single property rate of SDLT, not the second property rate.</p>
+
+<p>There is also the instances where if you own property anywhere worldwide, then you must declare this to the solicitor who will
+calculate the SDLT liability at the additional property rates, or if you are married and your partner owns a property then you are 
+considered as having an interest so again this will trigger the additional property rates and needs to be declared on the
+SDLT return submitted to HMRC.</p>
+
+<div id="stamp-duty" class="old-code-hide">
+    <div class="stamp-head row ">
+        <h3 style="width:100%; text-align:center;">Calculate Your Stamp Duty</h3>
+    </div>
+
+    <div class="stamp-body row " id="hmicbPage">
+        <div class="stamp-input form-wrap" style="width:100%;">
+        	<span style="">Enter Purchase Price</span>
+            <input class="form-input" id="price" type="number" name="price" onKeyUp="loanCalc();" />
+            <label class="form-label Csymbol psymbol" for="price" style="">£</label>
+        </div>
+        <div class="stamp-input form-wrap" style="width:100%;">
+        <label>
+            <input id="firstHome" type="checkbox">
+            First Time Buyer
+        </label>
+        </div>
+        <div class="stamp-input form-wrap" style="width:100%;margin-top: 0;">
+        <label>
+            <input id="secondHome" type="checkbox">
+            Buy to Let or Second Home
+        </label>
+        </div>
+        <div class="stamp-input form-wrap" style="width:100%;text-align: center; ">
+        <button class="button" id="btnCalculate"  type="button" style="background:#1d0d44;color: #FFF;margin:0 auto;" >Calculate </button>
+        </div>
+    </div>
+
+    <div id="divResult" class="row " style="display: none;">
+        <div class="stamp-results">
+
+            <h3>Results</h3>
+
+            <div class="columns small-12 medium-6">
+                <h5>Stamp Duty To Pay</h5>
+                <div id="amountToPay" class="stamp-res">£1,413,750.00</div>
+            </div>
+
+            <div class="columns small-12 medium-6">
+                <h5>Effective Rate</h5>
+                <div id="effectiveRate" class="stamp-res">11.3%</div>
+            </div>
+        </div>
+
+        <h3 style="width:100%; text-align:center;">How is this calculated?</h3>
+        <div class="stampResultsfix">
+            <table id="resultTable" width="60%" cellpadding="0" cellspacing="0" style="margin:0 auto;">
+                <tbody><tr>
+                    <th style="width: 28%;">Tax Band</th>
+                    <th style="width: 16%;">%</th>
+                    <th style="width: 28%;">Taxable Sum</th>
+                    <th style="width: 28%;">Tax</th>
+                </tr><tr><td>£0 - £125,000</td><td>0%</td><td>£125,000</td><td>£0.00</td></tr><tr><td>£125,000 - £250,000</td><td>2%</td><td>£125,000</td><td>£2,500.00</td></tr><tr><td>£250,000 - £925,000</td><td>5%</td><td>£675,000</td><td>£33,750.00</td></tr><tr><td>£925,000 - £1,500,000</td><td>10%</td><td>£575,000</td><td>£57,500.00</td></tr><tr><td>£1,500,000+</td><td>12%</td><td>£11,000,000</td><td>£1,320,000.00</td></tr>
+            </tbody></table>
+
+        </div>
+        <div class="jsMatchHeights" style="display:none"></div>
+    </div>
+</div>
+
+<br/>
+ <div class="button-wrap-lg text-center"><a class="button button-lg button-primary" href="#"  onClick="enquiryForm();"> Get in touch</a></div>   
+          </div>
+        </div>
+      </section>
+      
+      <div id="b-placeholder">
+</div>
+ 
+<script src="js/jquery.min.js"></script>
+
+<script>
+$(function(){
+  $("#b-placeholder").load("footer.html");$("#b-placeholder-menu").load("menu.html");
+});
+/*$("#datepicker").datepicker( {
+    format: "mm-yyyy",
+    startView: "months", 
+    minViewMode: "months"
+});
+$("#datepicker2").datepicker( {
+    format: "mm-yyyy",
+    startView: "months", 
+    minViewMode: "months"
+});*/
+</script>
+
+<script src="js/built.js"></script>
+
+  </div></body>
+</html>

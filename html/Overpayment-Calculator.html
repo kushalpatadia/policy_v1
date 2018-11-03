@@ -1,0 +1,810 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US">
+  <head>
+    <title>Mortgage Overpayment Calculator | Fee Free Contractor Mortgage Advice</title>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="description" content="Calculate how overpaying on your mortgage will shape your mortgage, How much can you save by overpaying? How many years will you knock off your mortgage?" />
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Roboto:100,300,300i,400,700,900">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/style.css" id="main-styles-link">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!--[if lt IE 10]>
+    <div style="background: #212121; padding: 10px 0; box-shadow: 3px 3px 5px 0 rgba(0,0,0,.3); clear: both; text-align:center; position: relative; z-index:1;"><a href="http://windows.microsoft.com/en-US/internet-explorer/"><img src="images/ie8-panel/warning_bar_0000_us.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today."></a></div>
+    <script src="js/html5shiv.min.js"></script>
+    <![endif]-->
+    <style type="text/css">
+	.lender-img img{ border:1px solid #1d0d44;width: 327px;    height: 260px;}
+	  .lender-img{  padding: 0 90px;}
+	  .limg img{ border:0px solid #1d0d44;width: 150px; margin-right:5px;
+        height: auto;
+    float: left;}
+	.quote-large .quote-meta.limg{width:100% !important;max-width:100% !important; padding-right:0px !important;}
+	.row{margin-left:0; margin-right:0;}select{color::#000;}	.ct-label{color#000;}.cs article{padding:10px;}input{color:#000;}</style>
+    <script type="text/javascript" src="/js/jquery.js"></script>
+<script type="text/javascript">
+jQuery.noConflict();
+</script>
+
+  </head>
+  <body>
+    
+    <div class="page">
+     
+   	    <header class="section page-header">
+        <div class="rd-navbar-wrap rd-navbar-absolute">
+          <nav class="rd-navbar rd-navbar-transparent rd-navbar-original rd-navbar-static" data-layout="rd-navbar-fixed" data-sm-layout="rd-navbar-fixed" data-md-layout="rd-navbar-fixed" data-md-device-layout="rd-navbar-fixed" data-lg-layout="rd-navbar-static" data-lg-device-layout="rd-navbar-fixed" data-xl-layout="rd-navbar-static" data-xl-device-layout="rd-navbar-static" data-lg-stick-up-offset="20px" data-xl-stick-up-offset="20px" data-xxl-stick-up-offset="20px" data-lg-stick-up="true" data-xl-stick-up="true" data-xxl-stick-up="true">
+            <div class="rd-navbar-main-outer">
+              <div class="rd-navbar-main">
+                <div class="rd-navbar-panel">
+                  <button class="rd-navbar-toggle" data-rd-navbar-toggle=".rd-navbar-nav-wrap"><span></span></button>
+                  <div class="rd-navbar-brand"><a class="brand" href="index-1.html"><img class="brand-logo-dark" src="images/cmd_logo.png" alt="" width="240" height="66"/><img class="brand-logo-light" src="images/cmd_logo.png" alt="" width="240" height="66"/></a>
+                  </div>
+                </div>
+                <div class="rd-navbar-main-element">
+                                    <div class="rd-navbar-nav-wrap">
+                    <ul class="rd-navbar-nav">
+                      <li class="rd-nav-item active"><a class="rd-nav-link" href="index-1.html">Home</a></li>
+                      <li class="rd-nav-item"><a class="rd-nav-link" href="index-1.html#aboutPage">About Us</a> </li>
+                      <li class="rd-nav-item"><a class="rd-nav-link" href="index-1.html#whyChooseUSPage">Why Choose Us</a> </li>
+                      <li class="rd-nav-item"><a class="rd-nav-link" href="#">Mortgages For Contractors</a> 
+                        <ul class="rd-menu rd-navbar-dropdown">
+                          <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="index-1.html#faqpage">Mortgage FAQ's</a></li>
+                          <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="ftb.html">First Time Buyer</a></li>
+                          <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="ntb.html">Next Time Buyer</a></li>
+                          <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="hm.html">Home Mover</a></li>
+                          <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="rm.html">Re-mortgage</a></li>
+                          <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="btl.html">Buy to Let</a></li>
+                          <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="htb.html">Help to Buy</a></li>
+                          <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="sem.html">Self Employed Mortgages</a></li>
+                          <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="mt.html">Mortgage Types</a></li>
+                        </ul>
+                      </li>
+                      <li class="rd-nav-item"><a class="rd-nav-link" href="#">Calculators</a>
+                        <ul class="rd-menu rd-navbar-dropdown">
+                          <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="index-1.html#hmicbPage">How much can I borrow?</a></li>
+                          <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="mortgage_repayment_calculator.html">What will my Repayments be?</a></li>
+                          <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="stamp_duty_calculator.html">Stamp Duty Calculator</a></li>
+                          <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="buy_to_let_calculator.html">Buy to Let Calculator</a></li>
+                          <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="compare_two_fixed_rates.html">Compare two fixed rates</a></li>
+                          <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="overpayment_calculator.html">Overpayment Calculator</a></li>
+                          <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="life_insurance_calculator.html">Life Insurance Calculator</a></li>
+                        </ul>
+                      </li>
+                      <li class="rd-nav-item"><a class="rd-nav-link" href="#">Protection</a>
+                        <ul class="rd-menu rd-navbar-dropdown">
+                          <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="abt_productn.html">Do I need Protecton and what is this?</a></li>
+                          <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="LI_family.html">Life Insurance for family</a></li>
+                          <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="mort_productn.html">Mortgage Protection</a></li>
+                          <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="icm_productn.html">Income Protection</a></li>
+                          <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="cii.html">Critical Illness Insurance</a></li>
+                          <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="rl_ins.html">Relevant Life Insurance</a></li>
+                          <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="fi_benefit.html">Family Income Benefit</a></li>
+                        </ul>
+                      </li>
+                      <li class="rd-nav-item"><a class="rd-nav-link" href="#">Contact Us</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </header>
+      <section class="section section-md bg-primary-gradient" id="accordpage" >
+        <div class="container text-center">
+        <script src="/js/char.js"></script>
+<link rel="stylesheet" type="text/css" href="/css/calcplus.css" />
+<link rel="stylesheet" type="text/css" href="/css/char.min.css" />
+<style type="text/css">
+.chartist-tooltip {position: absolute;display: inline-block;opacity: 0;min-width: 5em;padding: .5em;background: #ffeba0;color: #453D3F;font-family: Arial,Helvetica,sans-serif;font-weight: 700;text-align: center;pointer-events: none;z-index: 10;-webkit-transition: opacity .2s linear;-moz-transition: opacity .2s linear;-o-transition: opacity .2s linear;transition: opacity .2s linear; }
+.chartist-tooltip:before {position: absolute;top: 100%;left: 50%;width: 0;height: 0;margin-left: -15px;border: 15px solid transparent;border-top-color: #ffeba0; }
+.chartist-tooltip.tooltip-show {opacity: 1; }
+.ct-area, .ct-line {pointer-events: none; }
+.ct-axis-title {height:10px;position: absolute;}
+.ct-legend {position:relative;z-index:10;margin:0;list-style:none;text-align:left;background:#ffffff}
+.ct-legend li {margin:0;background:#ffffff;position:relative;padding-left:25px;margin-left:25px;margin-top:0px;cursor: pointer;display:inline-block;}
+.ct-legend li:before {width: 12px;height: 12px;position: absolute;left: 0;content: '';border: 2px solid transparent;border-radius: 2px;}
+.ct-legend li.inactive:before {background: transparent;}
+.ct-legend.ct-legend-inside {position: absolute;top: 0;right: 0;}
+.ct-legend.ct-legend-inside li{display: block;margin: 0;}
+.ct-legend .ct-series-0:before {background-color: #1991d0;border-color: #1991d0;}
+.ct-legend .ct-series-1:before {background-color: #f05b4f;border-color: #f05b4f;}
+</style>   
+          <h2 class="custom-title"><span>Overpayment Calculator</span></h2>
+          <div style="margin-top:20px; text-align:left;">
+          		<div class="goodcalctrs">
+             
+                                <div class="article">
+								<p>Our Mortgage Overpayment calculator enables you to understand that amount of time and the amount of interest that you can save by making a regular overpayment. When you make an overpayment after the loan has commenced, they add to your normal monthly mortgage payment. We look at the effect of making the same overpayment each month with our calculator.</p>
+                                <p>We make it simple to operate. All you need to do is:</p>
+           								<ul>
+                                                <li>Put in your mortgage balance as it stands today</li>
+                                                <li>Input the mortgage interest rate that you are paying</li>
+                                                <li>Type in the remaining term of the mortgage in years</li>
+												<li>Put in the regular overpayment that you want to make</li>
+												<li>There is also the option to input a currency, but this is not compulsory</li>
+                                        </ul>
+								<p>Once you have keyed these inputs, press 'Calculate' and the result will appear.</p>
+								<p>This lets you know the impact of monthly overpayments on your mortgage. It shows you how much time and money you will save. Making an overpayment will reduce the amount of interest you are charged. Our calculator is for demonstration only and should not be relied upon as an absolute figure. It uses certain assumptions and indicates the interest you will save. Some mortgages restrict the amount of cash you can overpay and have early repayment charges, so speak to your lender for details.</p>
+								<p>Some lenders take your overpayments and use them to reduce your monthly payments rather than your term, so make sure with them before you begin that the overpayments you make will have the desired effect.</p>
+								</div>	
+                                
+
+								 
+          <div class="Begin goodCalculator" style="padding-bottom:0px" id="hmicbPage">	
+                    <form class="contact">
+                            <fieldset>
+                                    <h3>Mortgage Overpayment Calculator</h3>
+                                  
+                                     <div class="stamp-input form-wrap" style="width:100%;">
+                                        <span style="">Current Mortgage Balance</span>
+                                        <input class="form-input calc numeric" id="MortgLoanAmount" type="number" name="MortgLoanAmount"   step="any" min="0" value="260000.00"/>
+                                        <label class="form-label Csymbol psymbol" for="price" style="" id="cur1">£</label>
+                                    </div>
+                                   
+                                     <div class="stamp-input form-wrap" style="width:100%;">
+                                        <span style="">Annual Interest Rate</span>
+                                        <input class="form-input calc numeric" id="MortgInterestRate" type="number" name="MortgInterestRate"   step="any" min="0" value="3"/>
+                                        <label class="form-label Csymbol psymbol" for="price" style="" >%</label>
+                                    </div>
+                                    
+                                    
+                                   <div class="stamp-input form-wrap" style="width:100%;">
+                                        <span style="">Mortgage Term:</span>
+                                        <input class="form-input calc numeric" id="MortgMonths" type="number" name="MortgMonths"   step="any" min="0" value="20"/>
+                                    </div>
+                                    <div class="stamp-input form-wrap" style="width:100%;">
+                                        <span style="">Regular Monthly Overpayment </span>
+                                        <input class="form-input calc numeric" id="MortgLoanOverPmnt" type="number" name="MortgLoanOverPmnt"   step="any" min="0" value="750"/>
+                                        <label class="form-label Csymbol psymbol" for="price" style="" id="cur2">£</label>
+                                    </div>
+                                   
+                                    <p style="opacity:0;">		<label for="Currency">Currency:</label>
+                                            <select id="currency" style="width:8em" name="currency" onchange="performCalculate()">
+                                            <option>&#36; (dollar)</option>
+                                            <option  selected="selected">&#163; (pound sterling)</option>
+                                            <option>&#128; (euro)</option>
+                                            <option>&#165; (yen)</option>
+                                            </select></p>																			
+                                    <input id="Payment" size="7" type="hidden" />																
+                            </fieldset>
+                     </form>
+                                        <div style="">												 
+                                        <div style="clear:both; height:10px;"></div>
+										<table class="GoodResults">
+                                                <tr>
+                                                        <th rowspan="2">Details</th>
+                                                        <th colspan="6">Summary</th>
+                                                </tr>
+                                                <tr>
+                                                        <th id="RepaymentTime1">Without Overpayments</th>
+                                                        <th id="RepaymentTime">With Overpayments</th>
+                                                </tr>
+                                                <tr id="AmBrd"></tr>
+                                                <tr id="PrBalncOd"></tr>
+                                                <tr id="MonthRepmt"></tr>
+                                                <tr id="TotIntPaid"></tr>
+                                                <tr id="ActIntPaid"></tr>												
+												<tr id="TimSav1"></tr>												
+												<tr class="odd" id="IntsSav"></tr>
+												<tr class="odd" id="TimSav"></tr>												
+                                        </table>										
+										<div style="margin-top:12px" id="ReShed"></div>									
+								        
+                                  <h3 style="margin-left:1em; margin-bottom: 1.25em;">Mortgage Debt Over Time</h3>										
+												 <div class="chart-container" style="background:#FFF;">
+                                                 <div class="ct-chart" style="height:20em"></div>
+                                                 </div>
+                                        </div>
+										</div>
+									   <div class="article" style="padding-top:2.2em;">
+									   <p>&nbsp;</p>
+									   <h2>Reference</h2>
+								       <p>The calculator assumes that the interest rate will not change for the entire mortgage term.</p>
+								       <p>The calculator assumes that your monthly overpayments will be the same every month for the rest of the mortgage term.</p>
+								       <p>Our mortgage overpayment calculator uses the standard formula with fixed-rate mortgage loan:</p>
+								       <p>
+								       <i>Monthly Mortgage Payment = { Rate / (1 &minus; (1 + Rate)<sup> &minus; N</sup>) } x Mortgage Amount</i>
+									   </p>
+								       <p style="padding-top:0"><i>Where:</i></p>
+									   <p><i>N = The Number of Monthly Payments (for a 10 year mortgage loan N = 10 x 12 = 120) ,</i></p>
+								       <p><i>Rate (Monthly Interest Rate) = Decimal Rate / 12 , or Rate = (Annual Interest Rate / 100) / 12</i></p>
+									   </div>
+                                       
+                        </div>
+           </div>
+        </div>
+      </section>
+      
+
+</div>
+   
+<script type="text/javascript">
+!function(t,e,i){"use strict";var a={axisTitle:"",axisClass:"ct-axis-title",offset:{x:0,y:0},textAnchor:"middle",flipText:!1},s={axisX:i.extend({},a),axisY:i.extend({},a)};s.axisX.offset.y=50,s.axisY.offset.y=-1,i.plugins=i.plugins||{},i.plugins.ctAxisTitle=function(t){return t=i.extend({},s,t),function(e){e.on("created",function(e){if(!t.axisX.axisTitle&&!t.axisY.axisTitle)throw new Error("ctAxisTitle plugin - You must provide at least one axis title");if(!e.axisX&&!e.axisY)throw new Error("ctAxisTitle plugin can only be used on charts that have at least one axis");var a,s,o;if(t.axisX.axisTitle&&e.axisX&&(a=e.axisX.axisLength/2+e.options.axisY.offset+e.options.chartPadding.left,s=e.options.chartPadding.top,"end"===e.options.axisY.position&&(a-=e.options.axisY.offset),"end"===e.options.axisX.position&&(s+=e.axisY.axisLength),o=new i.Svg("text"),o.addClass(t.axisX.axisClass),o.text(t.axisX.axisTitle),o.attr({x:a+t.axisX.offset.x,y:s+t.axisX.offset.y,"text-anchor":t.axisX.textAnchor}),e.svg.append(o,!0)),t.axisY.axisTitle&&e.axisY){a=0,s=e.axisY.axisLength/2+e.options.chartPadding.top,"start"===e.options.axisX.position&&(s+=e.options.axisX.offset),"end"===e.options.axisY.position&&(a=e.axisX.axisLength);var n="rotate("+(t.axisY.flipTitle?-90:90)+", "+a+", "+s+")";o=new i.Svg("text"),o.addClass(t.axisY.axisClass),o.text(t.axisY.axisTitle),o.attr({x:a+t.axisY.offset.x,y:s+t.axisY.offset.y,transform:n,"text-anchor":t.axisY.textAnchor}),e.svg.append(o,!0)}})}}}(window,document,Chartist),function(t,e,i){"use strict";function a(t){o(t,"tooltip-show")||(t.className=t.className+" tooltip-show")}function s(t){var e=new RegExp("tooltip-show\\s*","gi");t.className=t.className.replace(e,"").trim()}function o(t,e){return(" "+t.getAttribute("class")+" ").indexOf(" "+e+" ")>-1}function n(t,e){do t=t.nextSibling;while(t&&!o(t,e));return t}function r(t){return t.innerText||t.textContent}var l={currency:void 0,currencyFormatCallback:void 0,tooltipOffset:{x:0,y:-20},anchorToPoint:!1,appendToBody:!1,"class":void 0,pointClass:"ct-point"};i.plugins=i.plugins||{},i.plugins.tooltip=function(c){return c=i.extend({},l,c),function(l){function p(t,e,i){u.addEventListener(t,function(t){e&&!o(t.target,e)||i(t)})}function x(e){g=g||d.offsetHeight,h=h||d.offsetWidth;var i,a,s=-h/2+c.tooltipOffset.x,o=-g+c.tooltipOffset.y;if(c.appendToBody)d.style.top=e.pageY+o+"px",d.style.left=e.pageX+s+"px";else{var n=u.getBoundingClientRect(),r=e.pageX-n.left-t.pageXOffset,l=e.pageY-n.top-t.pageYOffset;!0===c.anchorToPoint&&e.target.x2&&e.target.y2&&(i=parseInt(e.target.x2.baseVal.value),a=parseInt(e.target.y2.baseVal.value)),d.style.top=(a||l)+o+"px",d.style.left=(i||r)+s+"px"}}var f=c.pointClass;l instanceof i.Bar?f="ct-bar":l instanceof i.Pie&&(f=l.options.donut?"ct-slice-donut":"ct-slice-pie");var u=l.container,d=u.querySelector(".chartist-tooltip");d||(d=e.createElement("div"),d.className=c["class"]?"chartist-tooltip "+c["class"]:"chartist-tooltip",c.appendToBody?e.body.appendChild(d):u.appendChild(d));var g=d.offsetHeight,h=d.offsetWidth;s(d),p("mouseover",f,function(t){var s=t.target,o="",p=l instanceof i.Pie?s:s.parentNode,f=p?s.parentNode.getAttribute("ct:meta")||s.parentNode.getAttribute("ct:series-name"):"",u=s.getAttribute("ct:meta")||f||"",v=!!u,y=s.getAttribute("ct:value");if(c.transformTooltipTextFnc&&"function"==typeof c.transformTooltipTextFnc&&(y=c.transformTooltipTextFnc(y)),c.tooltipFnc&&"function"==typeof c.tooltipFnc)o=c.tooltipFnc(u,y);else{if(c.metaIsHTML){var m=e.createElement("textarea");m.innerHTML=u,u=m.value}if(u='<span class="chartist-tooltip-meta">'+u+"</span>",v)o+=u+"<br>";else if(l instanceof i.Pie){var T=n(s,"ct-label");T&&(o+=r(T)+"<br>")}y&&(c.currency&&(y=void 0!=c.currencyFormatCallback?c.currencyFormatCallback(y,c):c.currency+y.replace(/(\d)(?=(\d{3})+(?:\.\d+)?$)/g,"$1,")),y='<span class="chartist-tooltip-value">'+y+"</span>",o+=y)}o&&(d.innerHTML=o,x(t),a(d),g=d.offsetHeight,h=d.offsetWidth)}),p("mouseout",f,function(){s(d)}),p("mousemove",null,function(t){!1===c.anchorToPoint&&x(t)})}}}(window,document,Chartist);		
+!function(e,t){"function"==typeof define&&define.amd?define(["chartist"],function(s){return e.returnExportsGlobal=t(s)}):"object"==typeof exports?module.exports=t(require("chartist")):e["Chartist.plugins.legend"]=t(e.Chartist)}(this,function(e){"use strict";var t={className:"",classNames:!1,removeAll:!1,legendNames:!1,clickable:!0,onClick:null,position:"top"};return e.plugins=e.plugins||{},e.plugins.legend=function(s){function i(e,t){return e-t}if(s&&s.position){if(!("top"===s.position||"bottom"===s.position||s.position instanceof HTMLElement))throw Error("The position you entered is not a valid position");if(s.position instanceof HTMLElement){var a=s.position;delete s.position}}return s=e.extend({},t,s),a&&(s.position=a),function(t){var a=t.container.querySelector(".ct-legend");if(a&&a.parentNode.removeChild(a),s.clickable){var n=t.data.series.map(function(s,i){return"object"!=typeof s&&(s={value:s}),s.className=s.className||t.options.classNames.series+"-"+e.alphaNumerate(i),s});t.data.series=n}var o=document.createElement("ul"),l=t instanceof e.Pie;o.className="ct-legend",t instanceof e.Pie&&o.classList.add("ct-legend-inside"),"string"==typeof s.className&&s.className.length>0&&o.classList.add(s.className),t.options.width&&(o.style.cssText="width: "+t.options.width+"px;margin: 0 auto;");var r=[],c=t.data.series.slice(0),d=t.data.series,p=l&&t.data.labels;if(p){var u=t.data.labels.slice(0);d=t.data.labels}d=s.legendNames||d;var f=Array.isArray(s.classNames)&&s.classNames.length===d.length;d.forEach(function(e,t){var i=document.createElement("li");i.className="ct-series-"+t,f&&(i.className+=" "+s.classNames[t]),i.setAttribute("data-legend",t),i.textContent=e.name||e,o.appendChild(i)}),t.on("created",function(){if(s.position instanceof HTMLElement)s.position.insertBefore(o,null);else switch(s.position){case"top":t.container.insertBefore(o,t.container.childNodes[0]);break;case"bottom":t.container.insertBefore(o,null)}}),s.clickable&&o.addEventListener("click",function(e){var a=e.target;if(a.parentNode===o&&a.hasAttribute("data-legend")){e.preventDefault();var n=parseInt(a.getAttribute("data-legend")),l=r.indexOf(n);if(l>-1)r.splice(l,1),a.classList.remove("inactive");else if(s.removeAll)r.push(n),a.classList.add("inactive");else if(t.data.series.length>1)r.push(n),a.classList.add("inactive");else{r=[];var d=Array.prototype.slice.call(o.childNodes);d.forEach(function(e){e.classList.remove("inactive")})}var f=c.slice(0);if(p)var m=u.slice(0);r.sort(i).reverse(),r.forEach(function(e){f.splice(e,1),p&&m.splice(e,1)}),s.onClick&&s.onClick(t,e),t.data.series=f,p&&(t.data.labels=m),t.update()}})}},e.plugins.legend});
+function c3(t){return tmp=t,""+tmp.toString().split("").reverse().join("").replace(/(\d{3})/g,"$1,").split("").reverse().join("").replace(/^,/,"")}function CalculatePFromForm(t,e,a,r,n){var s="";s=document.getElementById("currency");var d=s.value;d=d.toString().charAt(0),s=document.getElementById("cur1"),s.innerHTML=d,document.getElementById("cur2").innerHTML=d,grph.length=0,pushed.length=0,grph1.length=0,pushed1.length=0;var o=jQuery("#"+e).val(),i=jQuery("#"+t).val(),l=jQuery("#"+n).val(),h=jQuery("#"+a).val(),m=[],u=[],c=12,p=1*i,g=1*l,v=1*h,M=1*h,y=!1,x=1*i,f=o/1200,I=p,T=p,F=p*f,R=1-Math.pow(1+f,-(v*c)),B=F/R,L=F/R+g;mainPayment=B,overPayment=L;var P=0,w=0;grph.push(x),grph1.push(x),pushed.push(0),m.push(x.toFixed(2)),u.push(x.toFixed(2));for(var A=0;v*c>=A;A++){var b=p*Math.pow(1+f,A),E=-B,H=-L,O=Math.pow(1+f,A)-1,Y=E*O/f,C=H*O/f;T=b+C,I=b+Y,totalInterest=mainPayment*(M*c)-x,termRevised=Math.log(1/(1-x*f/overPayment))/Math.log(1+f),totalInterestOver=overPayment*termRevised-x,12==P&&(w++,P=0,0>=I?m.push(0):m.push(Math.max(0,I).toFixed(2)),0>=T?u.push(0):u.push(Math.max(0,T).toFixed(2)),grph.push(Math.max(0,I).toFixed(2)),pushed.push(w),0>=T?(y?grph1.push(null):grph1.push(0..toFixed(2)),y=!0):grph1.push(Math.max(0..toFixed(2),T).toFixed(2))),P++,sum1++}var S=0,j="",Q="";j+='<table class="GoodResults">',j+='<tr><th rowspan="2">Year</th><th colspan="6">Balance Schedule</th></tr>',j+="<tr><th>Without Overpayments</th><th>With Overpayments</th></tr>";for(var W=0;W<m.length;W++)S+=1,1===S?j+="<tr><td>"+W+"</td><td>"+d+c3(m[W])+"</td><td>"+d+c3(u[W])+"</td></tr>":2===S&&(j+='<tr class="odd"><td>'+W+"</td><td>"+d+c3(m[W])+"</td><td>"+d+c3(u[W])+"</td></tr>",S=0);j+="</table>",Q=document.getElementById("ReShed"),Q.innerHTML=j,$("#AmBrd").html("<td class='ResTitle'>Mortgage Amount</td><td>"+d+c3(x.toFixed(2))+"</td><td>"+d+c3(x.toFixed(2))+"</td>"),$("#PrBalncOd").html("<td class='ResTitle'>Number of Payments</td><td>"+Math.round(12*M)+"</td><td>"+Math.round(termRevised)+"</td>"),$("#TotIntPaid").html("<td class='ResTitle'>Total Interest Paid</td><td>"+d+c3(totalInterest.toFixed(2))+"</td><td>"+d+c3(totalInterestOver.toFixed(2))+"</td>"),$("#MonthRepmt").html("<td class='ResTitle'>Monthly Mortgage Repayments</td><td>"+d+c3(B.toFixed(2))+"</td><td>"+d+c3(L.toFixed(2))+"</td>"),$("#ActIntPaid").html("<td class='ResTitle'>Amount Repayable</td><td>"+d+c3((x+totalInterest).toFixed(2))+"</td><td>"+d+c3((x+totalInterestOver).toFixed(2))+"</td>"),$("#TimSav1").html("<td class='ResTitle'>Length of Mortgage</td><td id='timesave1'></td><td id='timesave2'></td>"),$("#IntsSav").html("<td style='font-weight:bold;text-align:left;'>Interest Saved</td><td style='font-weight:bold;text-align:right;' id='intsave' colspan='2'></td>"),$("#TimSav").html("<td style='font-weight:bold;text-align:left;'>Time Saved</td><td style='font-weight:bold;text-align:right;' id='timesave' colspan='2'></td>"),new Chartist.Line(".ct-chart",{labels:pushed,series:[grph,grph1]},{seriesBarDistance:10,reverseData:!1,horizontalBars:!1,axisY:{offset:60,labelInterpolationFnc:function(t){return d+t}},axisX:{offset:30,onlyInteger:!0},plugins:[Chartist.plugins.tooltip({currency:d,appendToBody:!0}),Chartist.plugins.ctAxisTitle({axisX:{axisTitle:"Years",axisClass:"ct-axis-title",offset:{x:0,y:30},textAnchor:"middle"},axisY:{axisTitle:"Balance",axisClass:"ct-axis-title",offset:{x:0,y:-7},flipTitle:!1}}),Chartist.plugins.legend({legendNames:["Without Overpayments","With Overpayments"],position:"bottom"})]}),document.getElementById("intsave").innerHTML=d+c3(Math.round(totalInterest-totalInterestOver).toFixed(2));var D=Math.round(12*M-termRevised)/12,N=Math.round(12*M-termRevised)%12;0==D&&0==N?document.getElementById("timesave").innerHTML="0 Years 0 Months":document.getElementById("timesave").innerHTML=Math.floor(D)+" Year"+(1==Math.floor(D)?"":"s")+(N>0?" "+N+" Months":"");var X=Math.round(12*M)/12,z=Math.round(12*M)%12;0==X&&0==z?document.getElementById("timesave1").innerHTML="0 Years 0 Months":document.getElementById("timesave1").innerHTML=Math.floor(X)+" Year"+(1==Math.floor(X)?"":"s")+(z>0?" "+z+" Months":"");var G=Math.round(termRevised)/12,k=Math.round(termRevised)%12;0==G&&0==k?document.getElementById("timesave2").innerHTML="0 Years 0 Months":document.getElementById("timesave2").innerHTML=Math.floor(G)+" Year"+(1==Math.floor(G)?"":"s")+(k>0?" "+k+" Months":"")}function performCalculate(){CalculatePFromForm("MortgLoanAmount","MortgInterestRate","MortgMonths","Payment","MortgLoanOverPmnt")}var grph=new Array,pushed=new Array,grph1=new Array,pushed1=new Array,sum1=0;
+jQuery(document).ready(function() {
+performCalculate(), jQuery(".calc").bind("keyup change input click", performCalculate);
+ 
+});
+</script>
+<style type="text/css">
+h6, .heading-6 {
+    font-size: 18px;
+    line-height: 1.5;
+}select{margin-bottom:5px;}
+</style>
+<section class="section">
+        <div class="row row-flex no-gutters">
+          <div class="" style="width:100%;">
+            <div class="section-lg" style="width:100%; text-align:center;">
+              <div class="container-custom">                
+                <div class="group-md group-middle social-items"><a class="icon icon-md icon-gray-400 novi-icon mdi mdi-facebook" href="#"></a><a class="icon icon-md icon-gray-400 novi-icon mdi mdi-twitter" href="#"></a><a class="icon icon-md icon-gray-400 novi-icon mdi mdi-instagram" href="#"></a><a class="icon icon-md icon-gray-400 novi-icon mdi mdi-facebook-messenger" href="#"></a><a class="icon icon-md icon-gray-400 novi-icon mdi mdi-linkedin" href="#"></a><a class="icon icon-md icon-gray-400 novi-icon mdi mdi-snapchat" href="#"></a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+       <div class="section section-sm bg-primary-gradient context-dark text-center">             
+              <p>THINK CAREFULLY BEFORE SECURING OTHER DEBTS AGAINST YOUR HOME.  <br/>
+YOUR HOME MAY BE REPOSSESSED IF YOU DO NOT KEEP UP REPAYMENTS ON YOUR MORTGAGE OR ANY OTHER DEBT SECURED ON IT<br/><br/>
+We do not charge a fee for residential mortgage advice. We may charge an administrative fee for processing each of your mortgage contracts; our fees only apply when you decide to go ahead with an application, your broker will inform you of the fee before you decide to proceed after the advice stage
+</p>
+            </div>
+            <div class="black_overlay" id="backgroundEF" style="display:none;"></div>
+            <div id="enqiury_form" style="display:none;" class="modal modal-contact in">
+       <div class="modal-dialogg">
+        <div class="formlogo">
+            <img class="brand-logo-dark" src="images/cmd_logo.png" alt="" width="240" height="66"/>
+            <button data-dismiss="modal" class="close modal-close" onClick="closeMWindow()"><span aria-hidden="true" class="text-colour-base">×</span></button>
+        </div>
+        
+        <div class="model-content bg-primary-gradient">
+       <form class="rd-form rd-mailform adisnal" name="adisnal" id="adisnal" data-form-output="form-output-global" data-form-type="adisnal" method="post" action="bat/rd-contactform.php">
+        <div class="eftt">
+            <div class="quote-heading">Get a FREE Quote</div>
+            <div>Call us on</div>
+            <div><strong>xxxxx xxxxxx</strong></div>
+            <div>Speak to one of our Experts</div>
+            <div>alternatively</div>
+            <div>Request a Call Back</div>
+        </div>
+        <div class="eForm">
+        	
+                <div class="form-wrap">
+                  <input class="form-input" id="adisnal-name" type="text" name="name" data-constraints="@Required">
+                  <label class="form-label" for="adisnal-name">Name</label>
+                </div>
+                <div class="form-wrap">
+                  <input class="form-input" id="adisnal-telephone" type="number" name="telephone" data-constraints="@Required">
+                  <label class="form-label" for="adisnal-telephone">Telephone Number</label>
+                </div>
+                <div class="form-wrap">
+                  <input class="form-input" id="adisnal-email" type="email" name="eemail" data-constraints="@Required">
+                  <label class="form-label" for="adisnal-email">E-mail</label>
+                </div>
+                <div class="form-wrap" >
+                  <label>Choose a time to call</label>
+                  <select name="choosetime" id="adisnal-choosetime" class="form-control" >
+                     <option value="">Select Option</option>                   
+                    <option value="Anytime">Anytime</option>
+                    <option value="Today 09:00 - 12:00">Today 09:00 - 12:00</option>
+                    <option value="Today 12:00 - 15:00">Today 12:00 - 15:00</option>
+                    <option value="Today 15:00 - 18:00">Today 15:00 - 18:00</option>
+                    <option value="Tomorrow 09:00 - 12:00">Tomorrow 09:00 - 12:00</option>
+                    <option value="Tomorrow 12:00 - 15:00">Tomorrow 12:00 - 15:00</option>
+                    <option value="Tomorrow 15:00 - 18:00">Tomorrow 15:00 - 18:00</option>
+                  </select>
+                </div><br/>
+                <div style="text-align:center;"><button class="button button-primary" type="submit">Call Me Back</button></div>
+              
+              <p style="margin:10px; text-align:center;">It would help us to be prepared if you could submit the following information also</p>
+              <h6 style=" text-decoration:underline;">Additional Details</h6>
+              <div class="eForm">
+              
+                <div class="form-wrap">
+                <label>Enquiry Type</label>
+                  <select name="etype" id="adisnal-etype" class="form-control" onChange="etypeChnage();" >
+                   <option value="Select Option">Select Option </option>
+		    <option value="First Time Buyer">First Time Buyer</option>
+                    <option value="Next Time Buyer">Next Time Buyer</option>
+                    <option value="Home-mover">Home-mover</option>
+                    <option value="Help to Buy">Help to Buy</option>
+                    <option value="Re-mortgage">Re-mortgage</option>
+                    <option value="Buy To Let">Buy To Let</option>
+                    <option value="Life Insurance">Life Insurance</option>
+                    <option value="Mortgage Protection">Mortgage Protection</option>
+                    <option value="Income Protection">Income Protection</option>
+                    <option value="RLP">RLP</option>
+                    <option value="Family Income Benefit">Family Income Benefit</option>
+                  </select>
+                </div>
+                <div style="display:none;" id="protectionFields">
+                	<div class="form-wrap">
+                      <label>Type of cover</label>
+                      <select name="covertype" id="adisnal-covertype" class="form-control">
+                        <option value="Select Option">Select Option </option>
+                        <option value="Level Term">Level Term </option>
+                        <option value="Increasing">Increasing</option>
+                        <option value="Decreasing">Decreasing</option>
+                      </select>
+                    </div>
+                    <div class="form-wrap">
+                      <label>With Critical Illness</label>
+                      <select name="criticali" id="adisnal-criticali" class="form-control">
+                        <option value="">Select Option</option>
+                        <option value="Yes">Yes</option>
+                        <option value="no">No</option>
+                      </select>
+                    </div>
+                    <div class="form-wrap">
+                      <label>Premium</label>
+                      <select name="premium" id="adisnal-premium" class="form-control">
+                        <option value="">Select Option</option>
+                        <option value="Guaranteed">Guaranteed</option>
+                        <option value="Reviewable">Reviewable</option>
+                      </select>
+                    </div>
+                    <div class="form-wrap">
+                      <label>Amount of cover required</label>
+                      <input class="form-input" id="adisnal-coveramount" type="number" name="coveramount" >
+                      <label class="form-label poundsymbol" for="inputVal">£</label>
+                    </div>
+                    <div class="form-wrap">
+                      <label>number of years</label>
+                      <input class="form-input" id="adisnal-noofyears" type="number" name="noofyears" >
+                    </div>
+                    <div class="form-wrap">
+                      <label>Budget</label>
+                      <input class="form-input" id="adisnal-budget" type="number" name="budget" >
+                      <label class="form-label poundsymbol" for="inputVal">£</label>
+                    </div>
+                </div> 
+               <div style="display:none;" id="otherprotectionFields">
+                <div class="form-wrap">
+                  <label>Contract Rate</label>
+                  <input class="form-input" id="adisnal-crate" type="number" name="crate" >
+                  <label class="form-label poundsymbol" for="inputVal">£</label>
+                  <br/>
+                  <select name="cratetype" id="adisnal-cratetype" class="form-control" >
+<option value="Select Option">Select Option</option>
+                  	<option value="Per Day">Per Day</option>
+                    <option value="Per Hour">Per Hour</option>
+                  </select>
+                </div>  
+
+                <div class="form-wrap">
+                	<label><strong>Length of Time Contracting</strong></label>
+                    <select name="clength" id="adisnal-clength" class="form-control">
+                        <option value="Select Option">Select Option</option>                        
+                        <option value="1 Month">1 Month</option>
+                        <option value="2 Months">2 Months</option>
+                        <option value="3 Months">3 Months</option>
+                        <option value="4 Months">4 Months</option>
+                        <option value="5 Months">5 Months</option>
+                        <option value="6 Months">6 Months</option>
+                        <option value="7 Months">7 Months</option>
+
+                        <option value="8 Months">8 Months</option>
+                        <option value="9 Months">9 Months</option>
+                        <option value="10 Months">10 Months</option>
+                        <option value="11 Months">11 Months</option>
+                        <option value="12 Months">12 Months</option>
+                        <option value="13 Months">13 Months</option>
+                        <option value="14 Months">14 Months</option>
+                        <option value="15 Months">15 Months</option>
+                        <option value="16 Months">16 Months</option>
+                        <option value="17 Months">17 Months</option>
+                        <option value="18 Months">18 Months</option>
+                        <option value="19 Months">19 Months</option>
+                        <option value="20 Months">20 Months</option>
+                        <option value="21 Months">21 Months</option>
+                        <option value="22 Months">22 Months</option>
+                        <option value="23 Months">23 Months</option>
+                        <option value="24 Months">24 Months</option>
+                        <option value="25 Months">25 Months</option>
+                        <option value="26 Months">26 Months</option>
+                        <option value="27 Months">27 Months</option>
+                        <option value="28 Months">28 Months</option>
+                        <option value="29 Months">29 Months</option>
+                        <option value="30 Months">30 Months</option>
+                        <option value="31 Months">31 Months</option>
+                        <option value="32 Months">32 Months</option>
+                        <option value="33 Months">33 Months</option>
+                        <option value="34 Months">34 Months</option>
+                        <option value="35 Months">35 Months</option>
+                        <option value="36 Months">36 Months</option>
+                        <option value="37 Months">37 Months</option>
+                        <option value="38 Months">38 Months</option>
+                        <option value="39 Months">39 Months</option>
+                        <option value="40 Months">40 Months</option>
+                        <option value="41 Months">41 Months</option>
+                        <option value="42 Months">42 Months</option>
+                        <option value="43 Months">43 Months</option>
+                        <option value="44 Months">44 Months</option>
+                        <option value="45 Months">45 Months</option>
+                        <option value="46 Months">46 Months</option>
+                        <option value="47 Months">47 Months</option>
+                        <option value="48 Months">48 Months</option>
+                        <option value="49 Months">49 Months</option>
+                        <option value="50 Months">50 Months</option>
+                        <option value="51 Months">51 Months</option>
+                        <option value="52 Months">52 Months</option>
+                        <option value="53 Months">53 Months</option>
+                        <option value="54 Months">54 Months</option>
+                        <option value="55 Months">55 Months</option>
+                        <option value="56 Months">56 Months</option>
+                        <option value="57 Months">57 Months</option>
+                        <option value="58 Months">58 Months</option>
+                        <option value="59 Months">59 Months</option>
+                        <option value="60 Months">60 Months</option>
+                        <option value="Longer">Longer</option>
+                      </select>
+                </div>          
+                <div class="form-wrap">
+
+                  <label><strong>Any Gaps in last 12 months? </strong></label>
+                    <select name="gapsinOneYear" id="adisnal-gapsinOneYear" class="form-control" onChange="vaCheck('gapsinOneYear');" >
+<option value="Select Option">Select Option</option>                    	
+<option value="yes">Yes</option>
+                        <option value="no">No</option>
+                    </select>
+                </div>
+                <div id="gapsinOneYear-div" style="display:none;">
+                	<label>How Long and When</label>
+                    <input class="form-input" id="adisnal-howlong" type="text" name="howlong" >
+                </div>
+                <div class="form-wrap">
+                <label>Time Left in Current Contract</label>
+                <select name="TimeLeft" id="adisnal-TimeLeft" class="form-control">
+                 <option value="Select Option">Select Option</option>   
+                    <option value="1 Month">1 Month</option>
+                    <option value="2 Months">2 Months</option>
+                    <option value="3 Months">3 Months</option>
+                    <option value="4 Months">4 Months</option>
+                    <option value="5 Months">5 Months</option>
+                    <option value="6 Months">6 Months</option>
+                    <option value="7 Months">7 Months</option>
+                    <option value="8 Months">8 Months</option>
+                    <option value="9 Months">9 Months</option>
+                    <option value="10 Months">10 Months</option>
+                    <option value="11 Months">11 Months</option>
+                    <option value="12 Months">12 Months</option>
+                    <option value="13 Months">13 Months</option>
+                    <option value="14 Months">14 Months</option>
+                    <option value="15 Months">15 Months</option>
+                    <option value="16 Months">16 Months</option>
+                    <option value="17 Months">17 Months</option>
+                    <option value="18 Months">18 Months</option>
+                    <option value="19 Months">19 Months</option>
+                    <option value="20 Months">20 Months</option>
+                    <option value="21 Months">21 Months</option>
+                    <option value="22 Months">22 Months</option>
+                    <option value="23 Months">23 Months</option>
+                    <option value="24 Months">24 Months</option>
+                    <option value="25 Months">25 Months</option>
+                    <option value="26 Months">26 Months</option>
+                    <option value="27 Months">27 Months</option>
+                    <option value="28 Months">28 Months</option>
+                    <option value="29 Months">29 Months</option>
+                    <option value="30 Months">30 Months</option>
+                    <option value="31 Months">31 Months</option>
+                    <option value="32 Months">32 Months</option>
+                    <option value="33 Months">33 Months</option>
+                    <option value="34 Months">34 Months</option>
+                    <option value="35 Months">35 Months</option>
+                    <option value="36 Months">36 Months</option>
+                    <option value="37 Months">37 Months</option>
+                    <option value="38 Months">38 Months</option>
+                    <option value="39 Months">39 Months</option>
+                    <option value="40 Months">40 Months</option>
+                    <option value="41 Months">41 Months</option>
+                    <option value="42 Months">42 Months</option>
+                    <option value="43 Months">43 Months</option>
+                    <option value="44 Months">44 Months</option>
+                    <option value="45 Months">45 Months</option>
+                    <option value="46 Months">46 Months</option>
+                    <option value="47 Months">47 Months</option>
+                    <option value="48 Months">48 Months</option>
+                    <option value="49 Months">49 Months</option>
+                    <option value="50 Months">50 Months</option>
+                    <option value="51 Months">51 Months</option>
+                    <option value="52 Months">52 Months</option>
+                    <option value="53 Months">53 Months</option>
+                    <option value="54 Months">54 Months</option>
+                    <option value="55 Months">55 Months</option>
+                    <option value="56 Months">56 Months</option>
+                    <option value="57 Months">57 Months</option>
+                    <option value="58 Months">58 Months</option>
+                    <option value="59 Months">59 Months</option>
+                    <option value="60 Months">60 Months</option>
+                  </select>
+                  </div>
+                  <div class="form-wrap">
+                     <label>What industry do you work in?</label>
+                     <input class="form-input" id="adisnal-industryworked" type="text" name="industryworked" >
+                  </div>
+                  <div class="form-wrap">
+                  <label>Contracting through</label>
+                  <select name="cThrough" id="adisnal-cThrough" class="form-control" >
+                 <option value="Select Option ">Select Option </option>
+                  	<option value="Limited Company">Limited Company</option>
+                    <option value="Umbrella">Umbrella</option>
+                    <option value="Other">Other</option>
+                  </select>
+                </div>
+                <div class="form-wrap">
+                     <label id="ppvaltext">Purchase Price</label>
+                     <input class="form-input" id="adisnal-pprice" type="number" name="pprice" >
+                     <label class="form-label poundsymbol" for="inputVal">£</label>
+                </div>
+                
+                <div class="form-wrap">
+                     <label>Loan Amount</label>
+                     <input class="form-input" id="adisnal-lamount" type="number" name="lamount" >
+                     <label class="form-label poundsymbol" for="inputVal">£</label>
+                </div>
+                <div id="remorDiv" style="display:none">
+                <div class="form-wrap">
+                     <label>Current Lender</label>
+                     <input class="form-input" id="adisnal-clender" type="text" name="clender" >
+                </div>
+                <div class="form-wrap">
+                     <label>Outstanding Balance</label>
+                     <input class="form-input" id="adisnal-outsbal" type="number" name="outsbal" >
+                     <label class="form-label poundsymbol" for="inputVal">£</label>
+                </div>
+                </div>
+                <div class="form-wrap" id="rentAcble">
+                     <label>Rent Acheivable</label>
+                     <input class="form-input" id="adisnal-rentAbl" type="number" name="lamount" >
+                     <label class="form-label poundsymbol" for="inputVal">£</label>
+                     <label class="form-label poundsymbol" for="inputVal">£</label>
+                </div>
+
+     <div class="form-wrap">
+                  <label><strong>Term of mortgage you would prefer?</strong></label>
+                  <select name="hLongIRF" id="adisnal-hLongIRF" class="form-control" >
+     		    <option value="Select Option">Select Option</option>             
+		    <option value="1">1 Year</option>
+                    <option value="2">2 Years</option>
+                    <option value="3">3 Years</option>
+                    <option value="4">4 Years</option>
+                    <option value="5">5 Years</option>
+                    <option value="6">6 Years</option>
+                    <option value="7">7 Years</option>
+                    <option value="8">8 Years</option>
+                    <option value="9">9 Years</option>
+                    <option value="10">10 Years</option>
+                    <option value="11">11 Years</option>
+                    <option value="12">12 Years</option>
+                    <option value="13">13 Years</option>
+                    <option value="14">14 Years</option>
+                    <option value="15">15 Years</option>
+                    <option value="16">16 Years</option>
+                    <option value="17">17 Years</option>
+                    <option value="18">18 Years</option>
+                    <option value="19">19 Years</option>
+                    <option value="20">20 Years</option>
+                    <option value="21">21 Year</option>
+                    <option value="22">22 Years</option>
+                    <option value="23">23 Years</option>
+                    <option value="24">24 Years</option>
+                    <option value="25">25 Years</option>
+                    <option value="26">26 Years</option>
+                    <option value="27">27 Years</option>
+                    <option value="28">28 Years</option>
+                    <option value="29">29 Years</option>
+                    <option value="30">30 Years</option>
+                    <option value="31">31 Year</option>
+                    <option value="32">32 Years</option>
+                    <option value="33">33 Years</option>
+                    <option value="34">34 Years</option>
+                    <option value="35">35 Years</option>
+                    <option value="36">36 Years</option>
+                    <option value="37">37 Years</option>
+                    <option value="38">38 Years</option>
+                    <option value="39">39 Years</option>
+                    <option value="40">40 Years</option>
+                  </select>
+                </div>
+
+               <!-- <div class="form-wrap">
+                  <label>Have you found a property</label>
+                  <select name="foundProperty" id="adisnal-foundProperty" class="form-control" >
+<option value="Select Option">Select Option</option>
+                  	<option value="Yes">Yes</option>
+                    <option value="no">No</option>
+                    <option value="looking">Am Looking</option>
+                  </select>
+                </div>-->
+                <div class="form-wrap">
+                  <label>Credit Rating</label>
+                  <select name="creditHistory" id="adisnal-creditHistory" class="form-control" onChange="crCheck();" >
+<option value="Select Option">Select Option</option>
+                  	<option value="Excellent">Excellent</option>
+                    <option value="Good">Good</option>
+                    <option value="Poor">Poor</option>
+                  </select>
+                </div>
+                <div id="cr-div"  style="display:none;">
+                	<div class="form-wrap">
+                      <label>Why Poor Credit?</label>
+                      <textarea class="form-input" id="adisnal-whyPoor" name="whyPoor"></textarea>
+                    </div>
+                </div>
+                <div class="form-wrap">
+                  <label>Visited another broker?</label>
+                    <select name="va-broker" id="adisnal-va-broker" class="form-control" onChange="vaCheck('va-broker');" >
+<option value="Select Option">Select Option</option>
+                        <option value="yes">Yes</option>
+                        <option value="no">No</option>
+                    </select>
+                </div>
+                <div id="va-broker-div"  style="display:none;">
+                	<div class="form-wrap">
+                	  <label>Why did you not proceed?</label>
+               
+                      <textarea class="form-input" id="adisnal-abReason" name="abReason"></textarea>
+                    </div>
+                </div>
+                <div class="form-wrap">
+                  <label>What are you hoping for from us?</label>
+                  <textarea class="form-input" id="adisnal-hopingFromUs" name="hopingFromUs"></textarea>
+                </div>
+                <div class="form-wrap">
+                  <label>Would you like a Fixed / Tracker mortgage?</label>
+                  <select name="ForTM" id="adisnal-ForTM" class="form-control" >
+<option value="Select Option">Select Option</option>
+                    <option value="Fixed">Fixed</option>
+                    <option value="Poor">Tracker</option>
+                  </select>
+                </div>
+                <div class="form-wrap">
+                  <label>How long do you want the initial rate to be fixed?</label>
+                  <select name="inirateFixed" id="adisnal-inirateFixed" class="form-control" >
+<option value="Select Option">Select Option</option>
+                    <option value="0">0 Year</option>
+                    <option value="2">2 Years</option>
+                    <option value="3">3 Years</option>
+                    <option value="5">5 Years</option>
+                    <option value="10">10 Years</option>
+                  </select>
+                </div>
+                <div class="form-wrap">
+                	<label><strong>What Features are important to you?</strong> </label>
+</div>
+                    <div class="checkbox">
+                      <label><input type="checkbox" value="1" name="impFeatures1">Offset your savings against the Mortgage?</label>
+                    </div>
+                    <div class="checkbox">
+                      <label><input type="checkbox" value="2" name="impFeatures2">No ERC overhang after the initial period</label>
+                    </div>
+                    <div class="checkbox">
+                      <label><input type="checkbox" value="3" name="impFeatures3">No Early Repayment Charge</label>
+                    </div>
+                    <div class="checkbox">
+                      <label><input type="checkbox" value="4" name="impFeatures4">Ability to Overpay</label>
+                    </div>
+                    <div class="checkbox">
+                      <label><input type="checkbox" value="5" name="impFeatures5">Ability to Underpay</label>
+                    </div>
+                    <div class="checkbox">
+                      <label><input type="checkbox" value="6" name="impFeatures6">Take repayment holidays</label>
+                    </div>
+                    <div class="checkbox">
+                      <label><input type="checkbox" value="7" name="impFeatures7">Free legal’s</label>
+                    </div>
+                    <div class="checkbox">
+                      <label><input type="checkbox" value="8" name="impFeatures8">Free Valuation</label>
+                    </div>
+                  </div>
+                
+                <div class="form-wrap"> 
+                  <label>Comments</label>
+                  <textarea class="form-input" id="adisnal-commentFinal" name="commentFinal"></textarea>
+                </div>                 
+                 <div class="form-wrap">
+                    <div class="checkbox">
+                  <div style="text-align:center; margin-top:10px;"><button class="button button-primary" type="submit">Call Me Back</button></div>
+                    </div>
+                 </div>
+                
+                 
+               
+              </div></div></form> </div> 
+       </div></div>
+      <footer class="section footer-1">
+        <div class="container">
+          <p class="rights">
+          Authorised and regulated by the Financial Conduct Authority FCA reg. 000000.<br/>
+				Contractor Mortgages Direct. Registered in England, No 00000000, Address and Postcode<br/>
+                The FCA does not regulate most Buy to Let mortgages.
+                <br/><br/>
+          <span>&copy;&nbsp; </span><span class="copyright-year"></span><span>&nbsp;</span><span>All rights reserved</span><span>.&nbsp;</span><a href="privacy-policy.html">Privacy Policy</a></p>
+        </div>
+      </footer>
+    <script type="text/javascript">
+	function enquiryForm(){ 
+			 document.getElementById('enqiury_form').style.display="block";	
+			 document.getElementById('backgroundEF').style.display="block";			 
+		}
+		function closeMWindow(){
+			 document.getElementById('enqiury_form').style.display="none";	
+			 document.getElementById('backgroundEF').style.display="none";			 
+		} 
+		function etypeChnage(){
+			document.getElementById('rentAcble').style.display="none";
+			document.getElementById('remorDiv').style.display="none";
+			document.getElementById('ppvaltext').innerHTML="Purchase Price";
+			var etypeVal= document.getElementById('adisnal-etype').value;
+			if(etypeVal == "Life Insurance" || etypeVal == "Mortgage Protection" || etypeVal == "Income Protection" || etypeVal == "RLP" || etypeVal == "Family Income Benefit"){
+				document.getElementById('protectionFields').style.display="block";	
+				document.getElementById('otherprotectionFields').style.display="none";
+			}else if(etypeVal!='Select Option'){
+				document.getElementById('otherprotectionFields').style.display="block";
+				document.getElementById('protectionFields').style.display="none";
+			}else{
+				document.getElementById('otherprotectionFields').style.display="none";
+				document.getElementById('protectionFields').style.display="none";	
+			}
+			if(etypeVal == "Buy To Let"){
+				document.getElementById('rentAcble').style.display="block";
+			}
+			if(etypeVal == "Re-mortgage"){
+				document.getElementById('remorDiv').style.display="block";
+				document.getElementById('ppvaltext').innerHTML="Property Value";
+			}
+		}
+		function vaCheck(divId){
+			var vaBVal= document.getElementById('adisnal-'+divId).value;
+			if(vaBVal == "yes"){
+				document.getElementById(divId+'-div').style.display="block";	
+			}else{
+				document.getElementById(divId+'-div').style.display="none";	
+			}
+		}
+		function checkTime(){
+			var timeVal= document.getElementById('adisnal-choosetime').value;
+			if(timeVal==""){
+				alert("Let us know when is best to call you");
+				document.getElementById('adisnal-choosetime').focus();
+			}else{
+				document.getElementById('callmetime').value="Today";
+				document.getElementById('adisnal').submit();
+			}
+		}
+		function checkTimea(){
+				document.getElementById('callmetime').value="ASAP";
+				document.getElementById('adisnal').submit();
+		}
+		function checkTimet(){
+			var timeVal= document.getElementById('adisnal-choosetime').value;
+			if(timeVal==""){
+				alert("Let us know when is best to call you");
+				document.getElementById('adisnal-choosetime').focus();
+			}else{
+				document.getElementById('callmetime').value="Tomorrow";
+				document.getElementById('adisnal').submit();
+			}
+		}
+		function crCheck(){
+			var crVal= document.getElementById('adisnal-creditHistory').value;
+			document.getElementById('cr-div').style.display="none";
+			if(crVal=="Poor"){
+				document.getElementById('cr-div').style.display="block";
+			}
+		}
+		</script>
+    <div class="snackbars" id="form-output-global"></div>
+   
+</body>
+</html>

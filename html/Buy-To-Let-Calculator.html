@@ -1,0 +1,139 @@
+﻿<!DOCTYPE html>
+<html class="wide wow-animation" lang="en">
+  <head>
+    <title>Buy To Let Calculator | Fee Free Contractor Mortgage Advice</title>
+    <meta name="description" content="Get an idea of how much you can borrow for a contractor buy to let mortgage with our easy to use calculator." />
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Roboto:100,300,300i,400,700,900">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/style.css" id="main-styles-link">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+   
+
+<script  src="/js/calculators.js?ver=1.0.0"></script>
+
+    <!--[if lt IE 10]>
+    <div style="background: #212121; padding: 10px 0; box-shadow: 3px 3px 5px 0 rgba(0,0,0,.3); clear: both; text-align:center; position: relative; z-index:1;"><a href="http://windows.microsoft.com/en-US/internet-explorer/"><img src="images/ie8-panel/warning_bar_0000_us.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today."></a></div>
+    <script src="js/html5shiv.min.js"></script>
+    <![endif]-->
+    <style type="text/css">
+	.lender-img img{ border:1px solid #1d0d44;width: 327px;    height: 260px;}
+	  .lender-img{  padding: 0 90px;}
+	  .limg img{ border:0px solid #1d0d44;width: 150px; margin-right:5px;
+        height: auto;
+    float: left;}
+	.quote-large .quote-meta.limg{width:100% !important;max-width:100% !important; padding-right:0px !important;}
+	.row{margin-left:0; margin-right:0;}	.cs article{padding:10px;}</style>
+    
+  </head>
+  <body>
+    
+    <div class="page">
+      
+   	    <header class="section page-header">
+        <div class="rd-navbar-wrap rd-navbar-absolute">
+          <nav class="rd-navbar rd-navbar-transparent" data-layout="rd-navbar-fixed" data-sm-layout="rd-navbar-fixed" data-md-layout="rd-navbar-fixed" data-md-device-layout="rd-navbar-fixed" data-lg-layout="rd-navbar-static" data-lg-device-layout="rd-navbar-fixed" data-xl-layout="rd-navbar-static" data-xl-device-layout="rd-navbar-static" data-lg-stick-up-offset="20px" data-xl-stick-up-offset="20px" data-xxl-stick-up-offset="20px" data-lg-stick-up="true" data-xl-stick-up="true" data-xxl-stick-up="true">
+            <div class="rd-navbar-main-outer">
+              <div class="rd-navbar-main">
+                <div class="rd-navbar-panel">
+                  <button class="rd-navbar-toggle" data-rd-navbar-toggle=".rd-navbar-nav-wrap"><span></span></button>
+                  <div class="rd-navbar-brand"><a class="brand" href="index.html"><img class="brand-logo-dark" src="images/cmd_logo.png" alt="" width="240" height="66"/><img class="brand-logo-light" src="images/cmd_logo.png" alt="" width="240" height="66"/></a>
+                  </div>
+                </div>
+                <div class="rd-navbar-main-element">
+                  <div id="b-placeholder-menu"></div>
+                </div>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </header>
+      <section class="section section-md bg-primary-gradient" id="accordpage" >
+        <div class="container text-center">
+          <h2 class="custom-title"><span>Buy To Let Calculator</span></h2>
+          <div style="margin-top:20px; text-align:left;">
+           <div class="calculator-widget calculator-old" id="buy_to_let_mortgage">
+    <div class="calculator-wrapper">
+          		<div class="section-content">
+
+                <div class="row">
+                    <!--  .col-xs-12 -->
+                    <div class="col-xs-12 col-sm-6">
+                        <div class="form-group group-label" style="">
+                            <label style="height: 18px;">Expected monthly rental income*</label>
+                        </div>
+                        <div class="form-group" style="">
+                            <span class="input-icon-group">
+                            <input type="number" class="data1 form-control" placeholder="" onkeypress="return isNumberKey(event)" style="padding-left:20px;">
+                            <i class="fa fa-gbp form-control-feedback" style="    left: 10px;    top: 48px;    color: #444;"></i>
+                          </span>
+                            <div class="help-block"></div>
+                        </div>
+                        <!--  .form-group -->
+                    </div>
+                    <!--  .col-sm-6 -->
+
+                    <div class="col-xs-12 col-sm-6">
+                        <div class="form-group group-label" style="">
+                            <label style="height: 18px;">Property value</label>
+                        </div>
+                        <div class="form-group" style="">
+                            <span class="input-icon-group">
+                            <input type="number" class="data2 form-control" placeholder="" onkeypress="return isNumberKey(event)" style="padding-left:20px;">
+                            <i class="fa fa-gbp form-control-feedback" style="    left: 10px;    top: 48px;    color: #444;"></i>
+                          </span>
+                            <div class="help-block"></div>
+                        </div>
+                        <!-- form-group -->
+                    </div>
+                    <!--  .col-sm-6 -->
+                </div>
+
+                <div class="widget-submit" style="text-align:center;">
+                    <a href="#" class="button" id="calculate" style="background:#1d0d44;color: #FFF;margin:0 auto;">Calculate </a>
+                </div>
+                
+                <!--  .widget-submit -->
+
+                <div class="info-box info-box-red" id="calculator-results">
+                    <h4 class="stamp-res" style="text-align:center; color:red;"></h4>
+                    <div class="info-blox-flex-holder">
+                        
+                        <!--  .flex-box -->
+
+                    </div>
+                    <!--  .info-blox-flex-holder -->
+                </div>
+            </div>
+           </div></div></div>
+        </div>
+      </section>
+      
+      <div id="b-placeholder">
+</div>
+ 
+
+<script>
+$(function(){
+  $("#b-placeholder").load("footer.html");$("#b-placeholder-menu").load("menu.html");
+  
+});
+/*$("#datepicker").datepicker( {
+    format: "mm-yyyy",
+    startView: "months", 
+    minViewMode: "months"
+});
+$("#datepicker2").datepicker( {
+    format: "mm-yyyy",
+    startView: "months", 
+    minViewMode: "months"
+});*/
+</script>
+  </div></body>
+</html>
