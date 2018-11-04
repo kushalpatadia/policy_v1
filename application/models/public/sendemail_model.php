@@ -177,7 +177,7 @@ class sendemail_model extends CI_Model
                         $important_feature = explode(',',$contact_data['important_feature']);
                         $important_feature_list='';
                         foreach ($important_feature as $key => $value) {
-                            switch ($variable) {
+                            switch ($value) {
                                 case '1':
                                     $important_feature_list .= '<li>Offset your savings against the Mortgage?</li>';
                                     break;

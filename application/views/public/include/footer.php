@@ -41,7 +41,8 @@ h6, .heading-6 {
     </div>
     <div class="eForm">
       <div class="form-wrap">
-        <input class="form-input" id="adisnal-name" type="text" name="name" data-constraints="@Required">
+        <!-- <input class="form-input" id="adisnal-name" type="text" name="name" data-constraints="@Required"> -->
+        <input class="form-input" id="adisnal-name" type="text" name="name" required>
         <label class="form-label" for="adisnal-name">Name</label>
       </div>
       <div class="form-wrap">
