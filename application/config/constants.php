@@ -1,5 +1,6 @@
 <?php  if ( ! defined('BASEPATH')) exit('No direct script access allowed');
-
+// print_r('die');
+// die();
 /*
 |--------------------------------------------------------------------------
 | File and Directory Modes
@@ -36,6 +37,26 @@ define('FOPEN_READ_WRITE_CREATE',				'a+b');
 define('FOPEN_WRITE_CREATE_STRICT',				'xb');
 define('FOPEN_READ_WRITE_CREATE_STRICT',		'x+b');
 
+
+######### CUSTOM SETUP ###########
+
+if ($_SERVER['SERVER_NAME'] == 'localhost')
+{
+    define('FOLDER_PATH','/policy_v1/');
+}
+else
+{
+    define('FOLDER_PATH','');
+}
+
+define('DOMAIN_URL', 'http://'.$_SERVER['SERVER_NAME'].FOLDER_PATH);
+define('DOC_ROOT', $_SERVER['DOCUMENT_ROOT'] . FOLDER_PATH);
+define('BASE_PATH', $_SERVER['DOCUMENT_ROOT'] . FOLDER_PATH);
+
+define('LOGO',DOMAIN_URL.'images/logo.jpg');
+define('SMTP_EMAIL','');
+define('SMTP_PASS','');
+define('ADMIN_EMAIL','amikbhatti@gmail.com');
 
 /* End of file constants.php */
 /* Location: ./application/config/constants.php */

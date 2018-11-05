@@ -9,11 +9,6 @@ class sendemail_model extends CI_Model
     
     function sendContactUsEmail($contact_id,$include_enquiry='no')
     {
-        define('LOGO','http://localhost/policy_v1/images/logo.jpg');
-        define('SMTP_EMAIL','katto.kp@gmail.com');
-        define('SMTP_PASS','kushalkatto1');
-        define('TO_EMAIL','kushalpatadia@gmail.com');
-
         $this->db->select('subject, template', FALSE);
         $this->db->from('template');
         $this->db->where('id', 1);
@@ -267,7 +262,7 @@ class sendemail_model extends CI_Model
                 $this->email->set_newline("\r\n");
                 $this->email->set_mailtype("html");
                 $this->email->from("noreply@contractor.com", "Contractor Mortgages");
-                $this->email->to(TO_EMAIL);
+                $this->email->to(ADMIN_EMAIL);
                 $this->email->subject("User Query");
                 $this->email->message($finalmsg);
                 $final = $this->email->send();
